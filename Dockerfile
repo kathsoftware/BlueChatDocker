@@ -2,9 +2,6 @@
 FROM jamesdbloom/docker-java7-maven
 # Update the cache and our installed packages
 RUN apt-get update && apt-get upgrade -y
-#RUN cd /root
-#RUN wget http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/grails-2.4.4.zip
-#RUN unzip grails-2.4.4.zip
 ENV GRAILS_HOME /local/git/grails-2.4.4
 RUN PATH=$GRAILS_HOME/bin:$PATH
 
